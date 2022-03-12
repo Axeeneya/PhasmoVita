@@ -52,7 +52,8 @@
 }
 .HeadCatList a {
     padding-top: 10px;
-    padding-left: 40px;
+    width: 250px;
+    text-align: center;
     margin-bottom: 30px;
 }
 

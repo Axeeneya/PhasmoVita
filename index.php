@@ -70,6 +70,15 @@
 			}
 			require ('templates/openProduct.php');
 		}
+
+		//Авторизация
+		elseif($page=='profile') {	
+			require ('authorization/index.php');
+   		}
+   		//Регистрация
+   		elseif($page=='register') {	
+			require ('authorization/register.php');
+   		}
 	?>
 </div>
 

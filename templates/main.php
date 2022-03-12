@@ -1,7 +1,7 @@
     <div class="mainBlockContent">
         <div class="HeadCatList">
             <h2>Популярные категории</h2>
-            <a href="">все категории</a>
+            <a href="index.php?page=shop">все категории</a>
         </div>
         <div class="categories">
             <?php

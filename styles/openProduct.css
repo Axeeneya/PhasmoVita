@@ -28,11 +28,12 @@
 	
 }
 .blockTovarChild {
-	width: auto;
+	width: all;
 	box-shadow: 0 0 10px rgba(0,0,0,0.2);
 	border: 2px solid #f2f2f2;
 	padding: 20px;
 	display: flex;
+	flex: 1;
 	max-width: 1024px;
 }
 
@@ -63,6 +64,7 @@
 	border-bottom: 1px solid #f2f2f2;
 	display: block;
 	height: 130px;
+	flex: 1;
 }
 .priceBlockDiscount{
 	border-top: 1px solid #f2f2f2;
