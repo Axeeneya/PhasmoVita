@@ -75,6 +75,10 @@
 		elseif($page=='profile') {	
 			require ('authorization/index.php');
    		}
+   		//Авторизация
+		elseif($page=='admin') {	
+			require ('authorization/admin.php');
+   		}
    		//Регистрация
    		elseif($page=='register') {	
 			require ('authorization/register.php');

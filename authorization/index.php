@@ -4,7 +4,13 @@ if ( ! isset($_SESSION)) {
     session_start();
 }
 if (array_key_exists('user', $_SESSION)) {
-    require 'profile.php';
+    if ($_SESSION['user']['role'] == 1 || $_SESSION['user']['role'] == null){
+        require 'profile.php';
+    } else
+    if ($_SESSION['user']['role'] == 2){
+        require 'admin.php'; 
+    }
+    
     require 'templates/footer.php';
     exit();
 }

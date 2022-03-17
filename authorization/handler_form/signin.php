@@ -14,9 +14,15 @@ if (mysqli_num_rows($check_user) > 0) {
         "id"        => $user['id'],
         "full_name" => $user['full_name'],
         "avatar"    => $user['avatar'],
-        "email"     => $user['email']
+        "email"     => $user['email'],
+        "role"     => $user['role'],
     ];
-    header('Location: ../../index.php?page=profile');
+    if ($_SESSION['user']['role'] == 1 || $_SESSION['user']['role'] == null){
+        header('Location: ../../index.php?page=profile');
+    } else
+    if ($_SESSION['user']['role'] == 2){
+        header('Location: ../../index.php?page=admin');
+    }
 } else {
     $_SESSION['message'] = 'Не верный логин или пароль';
     $redirect            = $_SERVER['HTTP_REFERER'] ?? 'redirect-form.html';
